@@ -1,0 +1,894 @@
+ltl goal: [] (! ((((((((position[0]==2)) && ((position[1]==2))) && ((position[2]==2))) && ((position[3]==0))) && ((position[4]==1))) && ((position[5]==1))) && ((position[6]==1))))
+starting claim 2
+Never claim moves to line 4	[(1)]
+  2:	proc  0 (:init::1) frogcrossing.pml:62 (state 1)	[i = 0]
+		:init:(0):i = 0
+  4:	proc  0 (:init::1) frogcrossing.pml:64 (state 2)	[((i<(7/2)))]
+  6:	proc  0 (:init::1) frogcrossing.pml:64 (state 3)	[position[i] = 1]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+  8:	proc  0 (:init::1) frogcrossing.pml:64 (state 4)	[i = (i+1)]
+		:init:(0):i = 1
+ 10:	proc  0 (:init::1) frogcrossing.pml:64 (state 2)	[((i<(7/2)))]
+ 12:	proc  0 (:init::1) frogcrossing.pml:64 (state 3)	[position[i] = 1]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+ 14:	proc  0 (:init::1) frogcrossing.pml:64 (state 4)	[i = (i+1)]
+		:init:(0):i = 2
+ 16:	proc  0 (:init::1) frogcrossing.pml:64 (state 2)	[((i<(7/2)))]
+ 18:	proc  0 (:init::1) frogcrossing.pml:64 (state 3)	[position[i] = 1]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 1
+		position[3] = 0
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+ 20:	proc  0 (:init::1) frogcrossing.pml:64 (state 4)	[i = (i+1)]
+		:init:(0):i = 3
+ 22:	proc  0 (:init::1) frogcrossing.pml:65 (state 5)	[((i>=(7/2)))]
+ 24:	proc  0 (:init::1) frogcrossing.pml:69 (state 10)	[position[(7/2)] = 0]
+ 26:	proc  0 (:init::1) frogcrossing.pml:72 (state 11)	[i = ((7/2)+1)]
+		:init:(0):i = 4
+ 28:	proc  0 (:init::1) frogcrossing.pml:74 (state 12)	[((i<7))]
+ 30:	proc  1 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(1):i = 0
+ 31:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+ 32:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+ 33:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+ 33:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 1
+ 34:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+ 35:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+ 36:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+ 36:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 2
+ 37:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+ 38:	proc  1 (mover:1) frogcrossing.pml:100 (state 3)	[(((position[i]==1)&&(position[(i+1)]==0)))]
+              Frog 1 moves from 2 to 3
+ 39:	proc  1 (mover:1) frogcrossing.pml:101 (state 4)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+1))]
+ 39:	proc  1 (mover:1) frogcrossing.pml:101 (state 5)	[position[i] = 0]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+ 39:	proc  1 (mover:1) frogcrossing.pml:101 (state 6)	[position[(i+1)] = 1]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 1
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+ 40:	proc  1 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+ 42:	proc  1 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(1):i = 0
+ 43:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 44:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 45:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 45:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 1
+ 46:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 47:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 48:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 48:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 2
+ 49:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 50:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 51:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 51:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 3
+ 52:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 53:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 54:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 54:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 4
+ 55:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 56:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 57:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 57:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 5
+ 58:	proc  1 (mover:1) frogcrossing.pml:124 (state 33)	[((i>=(7-2)))]
+ 59:	proc  1 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+ 61:	proc  0 (:init::1) frogcrossing.pml:74 (state 13)	[position[i] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 1
+		position[4] = 2
+		position[5] = 0
+		position[6] = 0
+ 63:	proc  0 (:init::1) frogcrossing.pml:74 (state 14)	[i = (i+1)]
+		:init:(0):i = 5
+ 65:	proc  0 (:init::1) frogcrossing.pml:74 (state 12)	[((i<7))]
+ 67:	proc  1 (mover:1) frogcrossing.pml:152 (state 58)	[i = (7-1)]
+		mover(1):i = 6
+ 68:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+ 69:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+ 70:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+ 70:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 5
+ 71:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+ 72:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+ 73:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+ 73:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 4
+ 74:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+ 75:	proc  1 (mover:1) frogcrossing.pml:156 (state 60)	[((((position[i]==2)&&(position[(i-1)]==1))&&(position[(i-2)]==0)))]
+              Frog 2 moves from 4 to 2
+ 76:	proc  1 (mover:1) frogcrossing.pml:157 (state 61)	[printf('Frog %d moves from %d to %d\\n',2,i,(i-2))]
+ 76:	proc  1 (mover:1) frogcrossing.pml:157 (state 62)	[position[i] = 0]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 1
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+ 76:	proc  1 (mover:1) frogcrossing.pml:157 (state 63)	[position[(i-2)] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+ 77:	proc  1 (mover:1) frogcrossing.pml:153 (state 75)	[break]
+ 79:	proc  1 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(1):i = 0
+ 80:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 81:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 82:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 82:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 1
+ 83:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 84:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 85:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 85:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 2
+ 86:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 87:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 88:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 88:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 3
+ 89:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 90:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 91:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 91:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 4
+ 92:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+ 93:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+ 94:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+ 94:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 5
+ 95:	proc  1 (mover:1) frogcrossing.pml:124 (state 33)	[((i>=(7-2)))]
+ 96:	proc  1 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+ 98:	proc  0 (:init::1) frogcrossing.pml:74 (state 13)	[position[i] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 0
+		position[5] = 2
+		position[6] = 0
+100:	proc  0 (:init::1) frogcrossing.pml:74 (state 14)	[i = (i+1)]
+		:init:(0):i = 6
+102:	proc  0 (:init::1) frogcrossing.pml:74 (state 12)	[((i<7))]
+104:	proc  1 (mover:1) frogcrossing.pml:133 (state 39)	[i = (7-1)]
+		mover(1):i = 6
+105:	proc  1 (mover:1) frogcrossing.pml:135 (state 40)	[((i>0))]
+106:	proc  1 (mover:1) frogcrossing.pml:139 (state 47)	[else]
+107:	proc  1 (mover:1) frogcrossing.pml:139 (state 48)	[(1)]
+107:	proc  1 (mover:1) frogcrossing.pml:141 (state 51)	[i = (i-1)]
+		mover(1):i = 5
+108:	proc  1 (mover:1) frogcrossing.pml:135 (state 40)	[((i>0))]
+109:	proc  1 (mover:1) frogcrossing.pml:137 (state 41)	[(((position[i]==2)&&(position[(i-1)]==0)))]
+              Frog 2 moves from 5 to 4
+110:	proc  1 (mover:1) frogcrossing.pml:138 (state 42)	[printf('Frog %d moves from %d to %d\\n',2,i,(i-1))]
+110:	proc  1 (mover:1) frogcrossing.pml:138 (state 43)	[position[i] = 0]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 0
+		position[5] = 0
+		position[6] = 0
+110:	proc  1 (mover:1) frogcrossing.pml:138 (state 44)	[position[(i-1)] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 0
+		position[6] = 0
+111:	proc  1 (mover:1) frogcrossing.pml:134 (state 56)	[break]
+113:	proc  1 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(1):i = 0
+114:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+115:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+116:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+116:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 1
+117:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+118:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+119:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+119:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 2
+120:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+121:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+122:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+122:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 3
+123:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+124:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+125:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+125:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 4
+126:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+127:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+128:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+128:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 5
+129:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+130:	proc  1 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+131:	proc  1 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+131:	proc  1 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(1):i = 6
+132:	proc  1 (mover:1) frogcrossing.pml:105 (state 14)	[((i>=(7-1)))]
+133:	proc  1 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+135:	proc  1 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(1):i = 0
+136:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+137:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+138:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+138:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 1
+139:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+140:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+141:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+141:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 2
+142:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+143:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+144:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+144:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 3
+145:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+146:	proc  1 (mover:1) frogcrossing.pml:119 (state 22)	[((((position[i]==1)&&(position[(i+1)]==2))&&(position[(i+2)]==0)))]
+              Frog 1 moves from 3 to 5
+147:	proc  1 (mover:1) frogcrossing.pml:120 (state 23)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+2))]
+147:	proc  1 (mover:1) frogcrossing.pml:120 (state 24)	[position[i] = 0]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 0
+		position[4] = 2
+		position[5] = 0
+		position[6] = 0
+147:	proc  1 (mover:1) frogcrossing.pml:120 (state 25)	[position[(i+2)] = 1]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 0
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+148:	proc  1 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+150:	proc  1 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(1):i = 0
+151:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+152:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+153:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+153:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 1
+154:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+155:	proc  1 (mover:1) frogcrossing.pml:119 (state 22)	[((((position[i]==1)&&(position[(i+1)]==2))&&(position[(i+2)]==0)))]
+              Frog 1 moves from 1 to 3
+156:	proc  1 (mover:1) frogcrossing.pml:120 (state 23)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+2))]
+156:	proc  1 (mover:1) frogcrossing.pml:120 (state 24)	[position[i] = 0]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 2
+		position[3] = 0
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+156:	proc  1 (mover:1) frogcrossing.pml:120 (state 25)	[position[(i+2)] = 1]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+157:	proc  1 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+159:	proc  1 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(1):i = 0
+160:	proc  1 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+161:	proc  1 (mover:1) frogcrossing.pml:100 (state 3)	[(((position[i]==1)&&(position[(i+1)]==0)))]
+              Frog 1 moves from 0 to 1
+162:	proc  1 (mover:1) frogcrossing.pml:101 (state 4)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+1))]
+162:	proc  1 (mover:1) frogcrossing.pml:101 (state 5)	[position[i] = 0]
+		position[0] = 0
+		position[1] = 0
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+162:	proc  1 (mover:1) frogcrossing.pml:101 (state 6)	[position[(i+1)] = 1]
+		position[0] = 0
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+163:	proc  1 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+165:	proc  1 (mover:1) frogcrossing.pml:152 (state 58)	[i = (7-1)]
+		mover(1):i = 6
+166:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+167:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+168:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+168:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 5
+169:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+170:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+171:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+171:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 4
+172:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+173:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+174:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+174:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 3
+175:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+176:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+177:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+177:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 2
+178:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+179:	proc  1 (mover:1) frogcrossing.pml:156 (state 60)	[((((position[i]==2)&&(position[(i-1)]==1))&&(position[(i-2)]==0)))]
+              Frog 2 moves from 2 to 0
+180:	proc  1 (mover:1) frogcrossing.pml:157 (state 61)	[printf('Frog %d moves from %d to %d\\n',2,i,(i-2))]
+180:	proc  1 (mover:1) frogcrossing.pml:157 (state 62)	[position[i] = 0]
+		position[0] = 0
+		position[1] = 1
+		position[2] = 0
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+180:	proc  1 (mover:1) frogcrossing.pml:157 (state 63)	[position[(i-2)] = 2]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 0
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+181:	proc  1 (mover:1) frogcrossing.pml:153 (state 75)	[break]
+183:	proc  1 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(1):i = 0
+184:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+185:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+186:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+186:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 1
+187:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+188:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+189:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+189:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 2
+190:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+191:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+192:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+192:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 3
+193:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+194:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+195:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+195:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 4
+196:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+197:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+198:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+198:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 5
+199:	proc  1 (mover:1) frogcrossing.pml:124 (state 33)	[((i>=(7-2)))]
+200:	proc  1 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+202:	proc  1 (mover:1) frogcrossing.pml:152 (state 58)	[i = (7-1)]
+		mover(1):i = 6
+203:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+204:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+205:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+205:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 5
+206:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+207:	proc  1 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+208:	proc  1 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+208:	proc  1 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(1):i = 4
+209:	proc  1 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+210:	proc  1 (mover:1) frogcrossing.pml:156 (state 60)	[((((position[i]==2)&&(position[(i-1)]==1))&&(position[(i-2)]==0)))]
+              Frog 2 moves from 4 to 2
+211:	proc  1 (mover:1) frogcrossing.pml:157 (state 61)	[printf('Frog %d moves from %d to %d\\n',2,i,(i-2))]
+211:	proc  1 (mover:1) frogcrossing.pml:157 (state 62)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 0
+		position[3] = 1
+		position[4] = 0
+		position[5] = 1
+		position[6] = 0
+211:	proc  1 (mover:1) frogcrossing.pml:157 (state 63)	[position[(i-2)] = 2]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 0
+		position[5] = 1
+		position[6] = 0
+212:	proc  1 (mover:1) frogcrossing.pml:153 (state 75)	[break]
+214:	proc  1 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(1):i = 0
+215:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+216:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+217:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+217:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 1
+218:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+219:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+220:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+220:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 2
+221:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+222:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+223:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+223:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 3
+224:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+225:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+226:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+226:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 4
+227:	proc  1 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+228:	proc  1 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+229:	proc  1 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+229:	proc  1 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(1):i = 5
+230:	proc  1 (mover:1) frogcrossing.pml:124 (state 33)	[((i>=(7-2)))]
+231:	proc  1 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+233:	proc  0 (:init::1) frogcrossing.pml:74 (state 13)	[position[i] = 2]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 0
+		position[5] = 1
+		position[6] = 2
+235:	proc  0 (:init::1) frogcrossing.pml:74 (state 14)	[i = (i+1)]
+		:init:(0):i = 7
+237:	proc  0 (:init::1) frogcrossing.pml:75 (state 15)	[((i>=7))]
+Starting mover with pid 3
+239:	proc  0 (:init::1) frogcrossing.pml:79 (state 20)	[(run mover())]
+241:	proc  2 (mover:1) frogcrossing.pml:152 (state 58)	[i = (7-1)]
+		mover(2):i = 6
+242:	proc  2 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+243:	proc  2 (mover:1) frogcrossing.pml:156 (state 60)	[((((position[i]==2)&&(position[(i-1)]==1))&&(position[(i-2)]==0)))]
+                  Frog 2 moves from 6 to 4
+244:	proc  2 (mover:1) frogcrossing.pml:157 (state 61)	[printf('Frog %d moves from %d to %d\\n',2,i,(i-2))]
+244:	proc  2 (mover:1) frogcrossing.pml:157 (state 62)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 0
+		position[5] = 1
+		position[6] = 0
+244:	proc  2 (mover:1) frogcrossing.pml:157 (state 63)	[position[(i-2)] = 2]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 0
+245:	proc  2 (mover:1) frogcrossing.pml:153 (state 75)	[break]
+247:	proc  2 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(2):i = 0
+248:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+249:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+250:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+250:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 1
+251:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+252:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+253:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+253:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 2
+254:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+255:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+256:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+256:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 3
+257:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+258:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+259:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+259:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 4
+260:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+261:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+262:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+262:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 5
+263:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+264:	proc  2 (mover:1) frogcrossing.pml:100 (state 3)	[(((position[i]==1)&&(position[(i+1)]==0)))]
+                  Frog 1 moves from 5 to 6
+265:	proc  2 (mover:1) frogcrossing.pml:101 (state 4)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+1))]
+265:	proc  2 (mover:1) frogcrossing.pml:101 (state 5)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 0
+		position[6] = 0
+265:	proc  2 (mover:1) frogcrossing.pml:101 (state 6)	[position[(i+1)] = 1]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 0
+		position[6] = 1
+266:	proc  2 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+268:	proc  2 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(2):i = 0
+269:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+270:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+271:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+271:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 1
+272:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+273:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+274:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+274:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 2
+275:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+276:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+277:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+277:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 3
+278:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+279:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+280:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+280:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 4
+281:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+282:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+283:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+283:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 5
+284:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+285:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+286:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+286:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 6
+287:	proc  2 (mover:1) frogcrossing.pml:105 (state 14)	[((i>=(7-1)))]
+288:	proc  2 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+290:	proc  2 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(2):i = 0
+291:	proc  2 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+292:	proc  2 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+293:	proc  2 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+293:	proc  2 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(2):i = 1
+294:	proc  2 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+295:	proc  2 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+296:	proc  2 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+296:	proc  2 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(2):i = 2
+297:	proc  2 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+298:	proc  2 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+299:	proc  2 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+299:	proc  2 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(2):i = 3
+300:	proc  2 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+301:	proc  2 (mover:1) frogcrossing.pml:119 (state 22)	[((((position[i]==1)&&(position[(i+1)]==2))&&(position[(i+2)]==0)))]
+                  Frog 1 moves from 3 to 5
+302:	proc  2 (mover:1) frogcrossing.pml:120 (state 23)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+2))]
+302:	proc  2 (mover:1) frogcrossing.pml:120 (state 24)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 0
+		position[4] = 2
+		position[5] = 0
+		position[6] = 1
+302:	proc  2 (mover:1) frogcrossing.pml:120 (state 25)	[position[(i+2)] = 1]
+		position[0] = 2
+		position[1] = 1
+		position[2] = 2
+		position[3] = 0
+		position[4] = 2
+		position[5] = 1
+		position[6] = 1
+303:	proc  2 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+305:	proc  2 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(2):i = 0
+306:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+307:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+308:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+308:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 1
+309:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+310:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+311:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+311:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 2
+312:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+313:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+314:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+314:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 3
+315:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+316:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+317:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+317:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 4
+318:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+319:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+320:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+320:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 5
+321:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+322:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+323:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+323:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 6
+324:	proc  2 (mover:1) frogcrossing.pml:105 (state 14)	[((i>=(7-1)))]
+325:	proc  2 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+327:	proc  2 (mover:1) frogcrossing.pml:115 (state 20)	[i = 0]
+		mover(2):i = 0
+328:	proc  2 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+329:	proc  2 (mover:1) frogcrossing.pml:121 (state 28)	[else]
+330:	proc  2 (mover:1) frogcrossing.pml:121 (state 29)	[(1)]
+330:	proc  2 (mover:1) frogcrossing.pml:123 (state 32)	[i = (i+1)]
+		mover(2):i = 1
+331:	proc  2 (mover:1) frogcrossing.pml:117 (state 21)	[((i<(7-2)))]
+332:	proc  2 (mover:1) frogcrossing.pml:119 (state 22)	[((((position[i]==1)&&(position[(i+1)]==2))&&(position[(i+2)]==0)))]
+                  Frog 1 moves from 1 to 3
+333:	proc  2 (mover:1) frogcrossing.pml:120 (state 23)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+2))]
+333:	proc  2 (mover:1) frogcrossing.pml:120 (state 24)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 0
+		position[2] = 2
+		position[3] = 0
+		position[4] = 2
+		position[5] = 1
+		position[6] = 1
+333:	proc  2 (mover:1) frogcrossing.pml:120 (state 25)	[position[(i+2)] = 1]
+		position[0] = 2
+		position[1] = 0
+		position[2] = 2
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 1
+334:	proc  2 (mover:1) frogcrossing.pml:116 (state 37)	[break]
+336:	proc  2 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(2):i = 0
+337:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+338:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+339:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+339:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 1
+340:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+341:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+342:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+342:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 2
+343:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+344:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+345:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+345:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 3
+346:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+347:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+348:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+348:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 4
+349:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+350:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+351:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+351:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 5
+352:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+353:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+354:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+354:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 6
+355:	proc  2 (mover:1) frogcrossing.pml:105 (state 14)	[((i>=(7-1)))]
+356:	proc  2 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+358:	proc  2 (mover:1) frogcrossing.pml:133 (state 39)	[i = (7-1)]
+		mover(2):i = 6
+359:	proc  2 (mover:1) frogcrossing.pml:135 (state 40)	[((i>0))]
+360:	proc  2 (mover:1) frogcrossing.pml:139 (state 47)	[else]
+361:	proc  2 (mover:1) frogcrossing.pml:139 (state 48)	[(1)]
+361:	proc  2 (mover:1) frogcrossing.pml:141 (state 51)	[i = (i-1)]
+		mover(2):i = 5
+362:	proc  2 (mover:1) frogcrossing.pml:135 (state 40)	[((i>0))]
+363:	proc  2 (mover:1) frogcrossing.pml:139 (state 47)	[else]
+364:	proc  2 (mover:1) frogcrossing.pml:139 (state 48)	[(1)]
+364:	proc  2 (mover:1) frogcrossing.pml:141 (state 51)	[i = (i-1)]
+		mover(2):i = 4
+365:	proc  2 (mover:1) frogcrossing.pml:135 (state 40)	[((i>0))]
+366:	proc  2 (mover:1) frogcrossing.pml:139 (state 47)	[else]
+367:	proc  2 (mover:1) frogcrossing.pml:139 (state 48)	[(1)]
+367:	proc  2 (mover:1) frogcrossing.pml:141 (state 51)	[i = (i-1)]
+		mover(2):i = 3
+368:	proc  2 (mover:1) frogcrossing.pml:135 (state 40)	[((i>0))]
+369:	proc  2 (mover:1) frogcrossing.pml:139 (state 47)	[else]
+370:	proc  2 (mover:1) frogcrossing.pml:139 (state 48)	[(1)]
+370:	proc  2 (mover:1) frogcrossing.pml:141 (state 51)	[i = (i-1)]
+		mover(2):i = 2
+371:	proc  2 (mover:1) frogcrossing.pml:135 (state 40)	[((i>0))]
+372:	proc  2 (mover:1) frogcrossing.pml:137 (state 41)	[(((position[i]==2)&&(position[(i-1)]==0)))]
+                  Frog 2 moves from 2 to 1
+373:	proc  2 (mover:1) frogcrossing.pml:138 (state 42)	[printf('Frog %d moves from %d to %d\\n',2,i,(i-1))]
+373:	proc  2 (mover:1) frogcrossing.pml:138 (state 43)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 0
+		position[2] = 0
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 1
+373:	proc  2 (mover:1) frogcrossing.pml:138 (state 44)	[position[(i-1)] = 2]
+		position[0] = 2
+		position[1] = 2
+		position[2] = 0
+		position[3] = 1
+		position[4] = 2
+		position[5] = 1
+		position[6] = 1
+374:	proc  2 (mover:1) frogcrossing.pml:134 (state 56)	[break]
+376:	proc  2 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(2):i = 0
+377:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+378:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+379:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+379:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 1
+380:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+381:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+382:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+382:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 2
+383:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+384:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+385:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+385:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 3
+386:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+387:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+388:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+388:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 4
+389:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+390:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+391:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+391:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 5
+392:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+393:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+394:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+394:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 6
+395:	proc  2 (mover:1) frogcrossing.pml:105 (state 14)	[((i>=(7-1)))]
+396:	proc  2 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+398:	proc  2 (mover:1) frogcrossing.pml:152 (state 58)	[i = (7-1)]
+		mover(2):i = 6
+399:	proc  2 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+400:	proc  2 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+401:	proc  2 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+401:	proc  2 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(2):i = 5
+402:	proc  2 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+403:	proc  2 (mover:1) frogcrossing.pml:158 (state 66)	[else]
+404:	proc  2 (mover:1) frogcrossing.pml:158 (state 67)	[(1)]
+404:	proc  2 (mover:1) frogcrossing.pml:160 (state 70)	[i = (i-1)]
+		mover(2):i = 4
+405:	proc  2 (mover:1) frogcrossing.pml:154 (state 59)	[((i>1))]
+406:	proc  2 (mover:1) frogcrossing.pml:156 (state 60)	[((((position[i]==2)&&(position[(i-1)]==1))&&(position[(i-2)]==0)))]
+                  Frog 2 moves from 4 to 2
+407:	proc  2 (mover:1) frogcrossing.pml:157 (state 61)	[printf('Frog %d moves from %d to %d\\n',2,i,(i-2))]
+407:	proc  2 (mover:1) frogcrossing.pml:157 (state 62)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 2
+		position[2] = 0
+		position[3] = 1
+		position[4] = 0
+		position[5] = 1
+		position[6] = 1
+407:	proc  2 (mover:1) frogcrossing.pml:157 (state 63)	[position[(i-2)] = 2]
+		position[0] = 2
+		position[1] = 2
+		position[2] = 2
+		position[3] = 1
+		position[4] = 0
+		position[5] = 1
+		position[6] = 1
+408:	proc  2 (mover:1) frogcrossing.pml:153 (state 75)	[break]
+410:	proc  2 (mover:1) frogcrossing.pml:96 (state 1)	[i = 0]
+		mover(2):i = 0
+411:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+412:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+413:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+413:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 1
+414:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+415:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+416:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+416:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 2
+417:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+418:	proc  2 (mover:1) frogcrossing.pml:102 (state 9)	[else]
+419:	proc  2 (mover:1) frogcrossing.pml:102 (state 10)	[(1)]
+419:	proc  2 (mover:1) frogcrossing.pml:104 (state 13)	[i = (i+1)]
+		mover(2):i = 3
+420:	proc  2 (mover:1) frogcrossing.pml:98 (state 2)	[((i<(7-1)))]
+421:	proc  2 (mover:1) frogcrossing.pml:100 (state 3)	[(((position[i]==1)&&(position[(i+1)]==0)))]
+                  Frog 1 moves from 3 to 4
+422:	proc  2 (mover:1) frogcrossing.pml:101 (state 4)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+1))]
+422:	proc  2 (mover:1) frogcrossing.pml:101 (state 5)	[position[i] = 0]
+		position[0] = 2
+		position[1] = 2
+		position[2] = 2
+		position[3] = 0
+		position[4] = 0
+		position[5] = 1
+		position[6] = 1
+422:	proc  2 (mover:1) frogcrossing.pml:101 (state 6)	[position[(i+1)] = 1]
+		position[0] = 2
+		position[1] = 2
+		position[2] = 2
+		position[3] = 0
+		position[4] = 1
+		position[5] = 1
+		position[6] = 1
+423:	proc  2 (mover:1) frogcrossing.pml:97 (state 18)	[break]
+spin: _spin_nvr.tmp:3, Error: assertion violated
+spin: text of failed assertion: assert(!(!(!((((((((position[0]==2)&&(position[1]==2))&&(position[2]==2))&&(position[3]==0))&&(position[4]==1))&&(position[5]==1))&&(position[6]==1))))))
+Never claim moves to line 3	[assert(!(!(!((((((((position[0]==2)&&(position[1]==2))&&(position[2]==2))&&(position[3]==0))&&(position[4]==1))&&(position[5]==1))&&(position[6]==1))))))]
+spin: trail ends after 424 steps
+#processes: 3
+		position[0] = 2
+		position[1] = 2
+		position[2] = 2
+		position[3] = 0
+		position[4] = 1
+		position[5] = 1
+		position[6] = 1
+424:	proc  2 (mover:1) frogcrossing.pml:90 (state 77)
+		mover(2):i = 3
+424:	proc  1 (mover:1) frogcrossing.pml:90 (state 77)
+		mover(1):i = 5
+424:	proc  0 (:init::1) frogcrossing.pml:80 (state 21) <valid end state>
+		:init:(0):i = 7
+424:	proc  - (goal:1) _spin_nvr.tmp:2 (state 6)
+3 processes created

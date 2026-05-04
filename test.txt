@@ -1,0 +1,140 @@
+/*
+   Frog Crossing Problem
+   Green frogs (1) start on the left, move right.
+   Yellow frogs (2) start on the right, move left.
+   One empty space in the middle.
+   Goal: swap the two groups.
+*/
+
+#define N 5
+
+int position[N];
+bool success = false;
+
+inline check() {
+   int x = 0;
+   bool correct = true;
+
+   do
+   :: x < (N / 2) ->
+      if
+      :: position[x] != 2 -> correct = false; break;
+      :: else -> skip;
+      fi;
+      x++;
+   :: else -> break;
+   od;
+
+   if
+   :: x == (N / 2) && position[x] != 0 -> correct = false;
+   :: else -> skip;
+   fi;
+   x++;
+
+   do
+   :: x < N ->
+      if
+      :: position[x] != 1 -> correct = false; break;
+      :: else -> skip;
+      fi;
+      x++;
+   :: else -> break;
+   od;
+
+   success = correct;
+}
+
+#define move(pos1, pos2, frog) \
+   atomic { \
+      printf("Frog %d moves from %d to %d\n", frog, pos1, pos2); \
+      position[pos1] = 0; \
+      position[pos2] = frog; \
+      check(); \
+   }
+
+/*
+   A single central process that picks any valid move
+   nondeterministically each step.
+   Rules:
+     - Green (1) moves right: one step or jump over any frog
+     - Yellow (2) moves left: one step or jump over any frog
+     - Cannot move off the board
+     - Landing square must be empty
+     - Jump square must have a frog in it
+*/
+
+active proctype mover() {
+    int i;
+    do
+    /* green step */
+    :: atomic {
+        i = 0;
+        do
+        :: i < N-1 ->
+            if
+            :: position[i] == 1 && position[i+1] == 0 ->
+                move(i, i+1, 1); break
+            :: else -> skip
+            fi;
+            i++
+        :: i >= N-1 -> break
+        od
+        }
+
+    /* green jump */
+    :: atomic {
+        i = 0;
+        do
+        :: i < N-2 ->
+            if
+            :: position[i] == 1 && position[i+1] == 2 && position[i+2] == 0 ->
+                move(i, i+2, 1); break
+            :: else -> skip
+            fi;
+            i++
+        :: i >= N-2 -> break
+        od
+        }
+
+    /* yellow step */
+    :: atomic {
+        i = N-1;
+        do
+        :: i > 0 ->
+            if
+            :: position[i] == 2 && position[i-1] == 0 ->
+                move(i, i-1, 2); break
+            :: else -> skip
+            fi;
+            i--
+        :: i <= 0 -> break
+        od
+        }
+
+    /* yellow jump */
+    :: atomic {
+        i = N-1;
+        do
+        :: i > 1 ->
+            if
+            :: position[i] == 2 && position[i-1] == 1 && position[i-2] == 0 ->
+                move(i, i-2, 2); break
+            :: else -> skip
+            fi;
+            i--
+        :: i <= 1 -> break
+        od
+        }
+    od
+}
+
+init {
+   int i = 0;
+   d_step {
+      for (i : 0 .. (N/2 - 1))    { position[i] = 1; }
+      position[N/2] = 0;
+      for (i : (N/2 + 1) .. (N-1)) { position[i] = 2; }
+   }
+}
+
+ltl { <> success }

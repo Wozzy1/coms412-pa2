@@ -1,0 +1,307 @@
+ltl ltl_0: <> (success)
+starting claim 2
+Never claim moves to line 4	[(!(success))]
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:111 (state 20)	[i = 0]
+		:init:(0):i = 0
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:113 (state 8)	[.(goto)]
+		:init:(0):i = 0
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 7)	[DO]
+		:init:(0):i = 0
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 3)	[position[i] = 1]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 0
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 4)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 1
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:113 (state 8)	[.(goto)]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 1
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 7)	[DO]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 1
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 3)	[position[i] = 1]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 1
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 4)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 2
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:113 (state 8)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 2
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 7)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 2
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:112 (state 6)	[goto :b9]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 2
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:113 (state 10)	[position[(5/2)] = 0]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 2
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 11)	[i = ((5/2)+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 3
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:115 (state 18)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 3
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 17)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(0):i = 3
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 13)	[position[i] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(0):i = 3
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 14)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(0):i = 4
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:115 (state 18)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(0):i = 4
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 17)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(0):i = 4
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 13)	[position[i] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(0):i = 4
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 14)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(0):i = 5
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:115 (state 18)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(0):i = 5
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 17)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(0):i = 5
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 16)	[goto :b10]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(0):i = 5
+  2:	proc  0 (:init::1) frogcrossing-starter.txt:114 (state 19)	[break]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(0):i = 5
+  4:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 21)	[i = 0]
+		:init:(0):i = 0
+  5:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 22)	[((i<=((5/2)-1)))]
+Starting move_frog with pid 2
+  6:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 23)	[(run move_frog(i,1))]
+  7:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 24)	[i = (i+1)]
+		:init:(0):i = 1
+  8:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 22)	[((i<=((5/2)-1)))]
+Starting move_frog with pid 3
+  9:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 23)	[(run move_frog(i,1))]
+ 10:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 24)	[i = (i+1)]
+		:init:(0):i = 2
+ 11:	proc  0 (:init::1) frogcrossing-starter.txt:118 (state 25)	[else]
+ 12:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 30)	[i = ((5/2)+1)]
+		:init:(0):i = 3
+ 13:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 31)	[((i<=(5-1)))]
+Starting move_frog with pid 4
+ 14:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 32)	[(run move_frog(i,2))]
+ 15:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 33)	[i = (i+1)]
+		:init:(0):i = 4
+ 16:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 31)	[((i<=(5-1)))]
+Starting move_frog with pid 5
+ 17:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 32)	[(run move_frog(i,2))]
+ 18:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 33)	[i = (i+1)]
+		:init:(0):i = 5
+ 19:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 34)	[else]
+ 20:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 35)	[goto :b12]
+ 21:	proc  0 (:init::1) frogcrossing-starter.txt:119 (state 38)	[break]
+ 23:	proc  4 (move_frog:1) frogcrossing-starter.txt:98 (state 96)	[((type==2))]
+ 25:	proc  3 (move_frog:1) frogcrossing-starter.txt:98 (state 96)	[((type==2))]
+ 27:	proc  2 (move_frog:1) frogcrossing-starter.txt:90 (state 1)	[((type==1))]
+ 29:	proc  1 (move_frog:1) frogcrossing-starter.txt:90 (state 1)	[((type==1))]
+ 31:	proc  4 (move_frog:1) frogcrossing-starter.txt:102 (state 142)	[((((current-2)>=0)&&(position[(current-2)]==0)))]
+                          Frog 2 moves from 4 to 2
+ 33:	proc  4 (move_frog:1) frogcrossing-starter.txt:102 (state 143)	[printf('Frog %d moves from %d to %d\\n',2,current,(current-2))]
+ 33:	proc  4 (move_frog:1) frogcrossing-starter.txt:102 (state 144)	[position[current] = 0]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+ 33:	proc  4 (move_frog:1) frogcrossing-starter.txt:102 (state 145)	[position[(current-2)] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 2
+		position[4] = 0
+ 34:	proc  4 (move_frog:1) frogcrossing-starter.txt:30 (state 146)	[x = 0]
+		move_frog(4):x = 0
+ 34:	proc  4 (move_frog:1) frogcrossing-starter.txt:32 (state 147)	[correct = 1]
+		move_frog(4):correct = 1
+		move_frog(4):x = 0
+ 35:	proc  4 (move_frog:1) frogcrossing-starter.txt:33 (state 148)	[((x<(5/2)))]
+ 36:	proc  4 (move_frog:1) frogcrossing-starter.txt:35 (state 149)	[((position[x]!=2))]
+ 36:	proc  4 (move_frog:1) frogcrossing-starter.txt:36 (state 150)	[correct = 0]
+		move_frog(4):correct = 0
+ 37:	proc  4 (move_frog:1) frogcrossing-starter.txt:47 (state 164)	[else]
+ 38:	proc  4 (move_frog:1) frogcrossing-starter.txt:47 (state 165)	[(1)]
+ 38:	proc  4 (move_frog:1) frogcrossing-starter.txt:49 (state 168)	[x = (x+1)]
+		move_frog(4):x = 1
+ 39:	proc  4 (move_frog:1) frogcrossing-starter.txt:52 (state 169)	[((x<5))]
+ 40:	proc  4 (move_frog:1) frogcrossing-starter.txt:57 (state 173)	[else]
+ 41:	proc  4 (move_frog:1) frogcrossing-starter.txt:57 (state 174)	[(1)]
+ 41:	proc  4 (move_frog:1) frogcrossing-starter.txt:59 (state 177)	[x = (x+1)]
+		move_frog(4):x = 2
+ 42:	proc  4 (move_frog:1) frogcrossing-starter.txt:52 (state 169)	[((x<5))]
+ 43:	proc  4 (move_frog:1) frogcrossing-starter.txt:54 (state 170)	[((position[x]!=1))]
+ 43:	proc  4 (move_frog:1) frogcrossing-starter.txt:55 (state 171)	[correct = 0]
+		move_frog(4):correct = 0
+ 44:	proc  4 (move_frog:1) frogcrossing-starter.txt:51 (state 182)	[break]
+ 45:	proc  4 (move_frog:1) frogcrossing-starter.txt:63 (state 183)	[success = correct]
+ 45:	proc  4 (move_frog:1) frogcrossing-starter.txt:103 (state 186)	[current = (current-2)]
+		move_frog(4):current = 2
+  <<<<<START OF CYCLE>>>>>
+ 47:	proc  4 (move_frog:1) frogcrossing-starter.txt:98 (state 96)	[((type==2))]
+ 49:	proc  4 (move_frog:1) frogcrossing-starter.txt:104 (state 187)	[else]
+ 51:	proc  4 (move_frog:1) frogcrossing-starter.txt:104 (state 188)	[(1)]
+spin: trail ends after 51 steps
+#processes: 5
+		position[0] = 1
+		position[1] = 1
+		position[2] = 2
+		position[3] = 2
+		position[4] = 0
+		success = 0
+ 51:	proc  4 (move_frog:1) frogcrossing-starter.txt:89 (state 191)
+		move_frog(4):correct = 0
+		move_frog(4):x = 2
+		move_frog(4):correct = 0
+		move_frog(4):x = 0
+		move_frog(4):correct = 0
+		move_frog(4):x = 0
+		move_frog(4):correct = 0
+		move_frog(4):x = 0
+		move_frog(4):current = 2
+		move_frog(4):type = 2
+		move_frog(4):frogId = 4
+ 51:	proc  3 (move_frog:1) frogcrossing-starter.txt:99 (state 189)
+		move_frog(3):correct = 0
+		move_frog(3):x = 0
+		move_frog(3):correct = 0
+		move_frog(3):x = 0
+		move_frog(3):correct = 0
+		move_frog(3):x = 0
+		move_frog(3):correct = 0
+		move_frog(3):x = 0
+		move_frog(3):current = 3
+		move_frog(3):type = 2
+		move_frog(3):frogId = 3
+ 51:	proc  2 (move_frog:1) frogcrossing-starter.txt:91 (state 94)
+		move_frog(2):correct = 0
+		move_frog(2):x = 0
+		move_frog(2):correct = 0
+		move_frog(2):x = 0
+		move_frog(2):correct = 0
+		move_frog(2):x = 0
+		move_frog(2):correct = 0
+		move_frog(2):x = 0
+		move_frog(2):current = 1
+		move_frog(2):type = 1
+		move_frog(2):frogId = 1
+ 51:	proc  1 (move_frog:1) frogcrossing-starter.txt:91 (state 94)
+		move_frog(1):correct = 0
+		move_frog(1):x = 0
+		move_frog(1):correct = 0
+		move_frog(1):x = 0
+		move_frog(1):correct = 0
+		move_frog(1):x = 0
+		move_frog(1):correct = 0
+		move_frog(1):x = 0
+		move_frog(1):current = 0
+		move_frog(1):type = 1
+		move_frog(1):frogId = 0
+ 51:	proc  0 (:init::1) frogcrossing-starter.txt:121 (state 40) <valid end state>
+		:init:(0):i = 5
+ 51:	proc  - (ltl_0:1) _spin_nvr.tmp:3 (state 3)
+5 processes created

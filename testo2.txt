@@ -1,0 +1,322 @@
+ltl ltl_0: <> (success)
+starting claim 2
+Never claim moves to line 4	[(!(success))]
+  2:	proc  1 (:init::1) test.txt:143 (state 20)	[i = 0]
+		:init:(1):i = 0
+  2:	proc  1 (:init::1) test.txt:145 (state 8)	[.(goto)]
+		:init:(1):i = 0
+  2:	proc  1 (:init::1) test.txt:144 (state 7)	[DO]
+		:init:(1):i = 0
+  2:	proc  1 (:init::1) test.txt:144 (state 3)	[position[i] = 1]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 0
+  2:	proc  1 (:init::1) test.txt:144 (state 4)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 1
+  2:	proc  1 (:init::1) test.txt:145 (state 8)	[.(goto)]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 1
+  2:	proc  1 (:init::1) test.txt:144 (state 7)	[DO]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 1
+  2:	proc  1 (:init::1) test.txt:144 (state 3)	[position[i] = 1]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 1
+  2:	proc  1 (:init::1) test.txt:144 (state 4)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 2
+  2:	proc  1 (:init::1) test.txt:145 (state 8)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 2
+  2:	proc  1 (:init::1) test.txt:144 (state 7)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 2
+  2:	proc  1 (:init::1) test.txt:144 (state 6)	[goto :b13]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 2
+  2:	proc  1 (:init::1) test.txt:145 (state 10)	[position[(5/2)] = 0]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 2
+  2:	proc  1 (:init::1) test.txt:146 (state 11)	[i = ((5/2)+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 3
+  2:	proc  1 (:init::1) test.txt:147 (state 18)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 3
+  2:	proc  1 (:init::1) test.txt:146 (state 17)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 0
+		position[4] = 0
+		:init:(1):i = 3
+  2:	proc  1 (:init::1) test.txt:146 (state 13)	[position[i] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(1):i = 3
+  2:	proc  1 (:init::1) test.txt:146 (state 14)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(1):i = 4
+  2:	proc  1 (:init::1) test.txt:147 (state 18)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(1):i = 4
+  2:	proc  1 (:init::1) test.txt:146 (state 17)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 0
+		:init:(1):i = 4
+  2:	proc  1 (:init::1) test.txt:146 (state 13)	[position[i] = 2]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(1):i = 4
+  2:	proc  1 (:init::1) test.txt:146 (state 14)	[i = (i+1)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(1):i = 5
+  2:	proc  1 (:init::1) test.txt:147 (state 18)	[.(goto)]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(1):i = 5
+  2:	proc  1 (:init::1) test.txt:146 (state 17)	[DO]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(1):i = 5
+  2:	proc  1 (:init::1) test.txt:146 (state 16)	[goto :b14]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(1):i = 5
+  2:	proc  1 (:init::1) test.txt:146 (state 19)	[break]
+		position[0] = 1
+		position[1] = 1
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+		:init:(1):i = 5
+  4: proc 1 terminates
+  6:	proc  0 (scheduler:1) test.txt:72 (state 3)	[(!(success))]
+  8:	proc  0 (scheduler:1) test.txt:75 (state 4)	[moved = 0]
+		scheduler(0):moved = 0
+  8:	proc  0 (scheduler:1) test.txt:76 (state 5)	[i = 0]
+		scheduler(0):moved = 0
+		scheduler(0):i = 0
+ 10:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 12:	proc  0 (scheduler:1) test.txt:84 (state 53)	[else]
+ 14:	proc  0 (scheduler:1) test.txt:84 (state 54)	[i = (i+1)]
+		scheduler(0):i = 1
+ 16:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 18:	proc  0 (scheduler:1) test.txt:80 (state 7)	[((((position[i]==1)&&((i+1)<5))&&(position[(i+1)]==0)))]
+          Frog 1 moves from 1 to 2
+ 20:	proc  0 (scheduler:1) test.txt:81 (state 8)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+1))]
+ 20:	proc  0 (scheduler:1) test.txt:81 (state 9)	[position[i] = 0]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 0
+		position[3] = 2
+		position[4] = 2
+ 20:	proc  0 (scheduler:1) test.txt:81 (state 10)	[position[(i+1)] = 1]
+		position[0] = 1
+		position[1] = 0
+		position[2] = 1
+		position[3] = 2
+		position[4] = 2
+ 21:	proc  0 (scheduler:1) test.txt:16 (state 11)	[x = 0]
+		scheduler(0):x = 0
+ 21:	proc  0 (scheduler:1) test.txt:18 (state 12)	[correct = 1]
+		scheduler(0):correct = 1
+		scheduler(0):x = 0
+ 22:	proc  0 (scheduler:1) test.txt:19 (state 13)	[((x<(5/2)))]
+ 23:	proc  0 (scheduler:1) test.txt:21 (state 14)	[((position[x]!=2))]
+ 23:	proc  0 (scheduler:1) test.txt:21 (state 15)	[correct = 0]
+		scheduler(0):correct = 0
+ 24:	proc  0 (scheduler:1) test.txt:30 (state 29)	[else]
+ 25:	proc  0 (scheduler:1) test.txt:30 (state 30)	[(1)]
+ 25:	proc  0 (scheduler:1) test.txt:32 (state 33)	[x = (x+1)]
+		scheduler(0):x = 1
+ 26:	proc  0 (scheduler:1) test.txt:35 (state 34)	[((x<5))]
+ 27:	proc  0 (scheduler:1) test.txt:37 (state 35)	[((position[x]!=1))]
+ 27:	proc  0 (scheduler:1) test.txt:37 (state 36)	[correct = 0]
+		scheduler(0):correct = 0
+ 28:	proc  0 (scheduler:1) test.txt:34 (state 47)	[break]
+ 29:	proc  0 (scheduler:1) test.txt:44 (state 48)	[success = correct]
+ 29:	proc  0 (scheduler:1) test.txt:82 (state 51)	[moved = 1]
+		scheduler(0):moved = 1
+ 31:	proc  0 (scheduler:1) test.txt:88 (state 62)	[(moved)]
+ 33:	proc  0 (scheduler:1) test.txt:72 (state 3)	[(!(success))]
+ 35:	proc  0 (scheduler:1) test.txt:75 (state 4)	[moved = 0]
+		scheduler(0):moved = 0
+ 35:	proc  0 (scheduler:1) test.txt:76 (state 5)	[i = 0]
+		scheduler(0):moved = 0
+		scheduler(0):i = 0
+ 37:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 39:	proc  0 (scheduler:1) test.txt:80 (state 7)	[((((position[i]==1)&&((i+1)<5))&&(position[(i+1)]==0)))]
+          Frog 1 moves from 0 to 1
+ 41:	proc  0 (scheduler:1) test.txt:81 (state 8)	[printf('Frog %d moves from %d to %d\\n',1,i,(i+1))]
+ 41:	proc  0 (scheduler:1) test.txt:81 (state 9)	[position[i] = 0]
+		position[0] = 0
+		position[1] = 0
+		position[2] = 1
+		position[3] = 2
+		position[4] = 2
+ 41:	proc  0 (scheduler:1) test.txt:81 (state 10)	[position[(i+1)] = 1]
+		position[0] = 0
+		position[1] = 1
+		position[2] = 1
+		position[3] = 2
+		position[4] = 2
+ 42:	proc  0 (scheduler:1) test.txt:16 (state 11)	[x = 0]
+		scheduler(0):x = 0
+ 42:	proc  0 (scheduler:1) test.txt:18 (state 12)	[correct = 1]
+		scheduler(0):correct = 1
+		scheduler(0):x = 0
+ 43:	proc  0 (scheduler:1) test.txt:19 (state 13)	[((x<(5/2)))]
+ 44:	proc  0 (scheduler:1) test.txt:21 (state 14)	[((position[x]!=2))]
+ 44:	proc  0 (scheduler:1) test.txt:21 (state 15)	[correct = 0]
+		scheduler(0):correct = 0
+ 45:	proc  0 (scheduler:1) test.txt:30 (state 29)	[else]
+ 46:	proc  0 (scheduler:1) test.txt:30 (state 30)	[(1)]
+ 46:	proc  0 (scheduler:1) test.txt:32 (state 33)	[x = (x+1)]
+		scheduler(0):x = 1
+ 47:	proc  0 (scheduler:1) test.txt:35 (state 34)	[((x<5))]
+ 48:	proc  0 (scheduler:1) test.txt:38 (state 38)	[else]
+ 49:	proc  0 (scheduler:1) test.txt:38 (state 39)	[(1)]
+ 49:	proc  0 (scheduler:1) test.txt:40 (state 42)	[x = (x+1)]
+		scheduler(0):x = 2
+ 50:	proc  0 (scheduler:1) test.txt:35 (state 34)	[((x<5))]
+ 51:	proc  0 (scheduler:1) test.txt:38 (state 38)	[else]
+ 52:	proc  0 (scheduler:1) test.txt:38 (state 39)	[(1)]
+ 52:	proc  0 (scheduler:1) test.txt:40 (state 42)	[x = (x+1)]
+		scheduler(0):x = 3
+ 53:	proc  0 (scheduler:1) test.txt:35 (state 34)	[((x<5))]
+ 54:	proc  0 (scheduler:1) test.txt:37 (state 35)	[((position[x]!=1))]
+ 54:	proc  0 (scheduler:1) test.txt:37 (state 36)	[correct = 0]
+		scheduler(0):correct = 0
+ 55:	proc  0 (scheduler:1) test.txt:34 (state 47)	[break]
+ 56:	proc  0 (scheduler:1) test.txt:44 (state 48)	[success = correct]
+ 56:	proc  0 (scheduler:1) test.txt:82 (state 51)	[moved = 1]
+		scheduler(0):moved = 1
+ 58:	proc  0 (scheduler:1) test.txt:88 (state 62)	[(moved)]
+ 60:	proc  0 (scheduler:1) test.txt:72 (state 3)	[(!(success))]
+ 62:	proc  0 (scheduler:1) test.txt:75 (state 4)	[moved = 0]
+		scheduler(0):moved = 0
+ 62:	proc  0 (scheduler:1) test.txt:76 (state 5)	[i = 0]
+		scheduler(0):moved = 0
+		scheduler(0):i = 0
+ 64:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 66:	proc  0 (scheduler:1) test.txt:84 (state 53)	[else]
+ 68:	proc  0 (scheduler:1) test.txt:84 (state 54)	[i = (i+1)]
+		scheduler(0):i = 1
+ 70:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 72:	proc  0 (scheduler:1) test.txt:84 (state 53)	[else]
+ 74:	proc  0 (scheduler:1) test.txt:84 (state 54)	[i = (i+1)]
+		scheduler(0):i = 2
+ 76:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 78:	proc  0 (scheduler:1) test.txt:84 (state 53)	[else]
+ 80:	proc  0 (scheduler:1) test.txt:84 (state 54)	[i = (i+1)]
+		scheduler(0):i = 3
+ 82:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 84:	proc  0 (scheduler:1) test.txt:84 (state 53)	[else]
+ 86:	proc  0 (scheduler:1) test.txt:84 (state 54)	[i = (i+1)]
+		scheduler(0):i = 4
+ 88:	proc  0 (scheduler:1) test.txt:78 (state 6)	[((i<5))]
+ 90:	proc  0 (scheduler:1) test.txt:84 (state 53)	[else]
+ 92:	proc  0 (scheduler:1) test.txt:84 (state 54)	[i = (i+1)]
+		scheduler(0):i = 5
+ 94:	proc  0 (scheduler:1) test.txt:86 (state 57)	[else]
+  <<<<<START OF CYCLE>>>>>
+spin: trail ends after 96 steps
+#processes: 1
+		position[0] = 0
+		position[1] = 1
+		position[2] = 1
+		position[3] = 2
+		position[4] = 2
+		success = 0
+ 96:	proc  0 (scheduler:1) test.txt:88 (state 62)
+		scheduler(0):correct = 0
+		scheduler(0):x = 0
+		scheduler(0):correct = 0
+		scheduler(0):x = 0
+		scheduler(0):correct = 0
+		scheduler(0):x = 0
+		scheduler(0):correct = 0
+		scheduler(0):x = 3
+		scheduler(0):moved = 0
+		scheduler(0):i = 5
+ 96:	proc  - (ltl_0:1) _spin_nvr.tmp:3 (state 3)
+2 processes created
